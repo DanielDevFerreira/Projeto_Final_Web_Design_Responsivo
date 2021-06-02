@@ -2,7 +2,7 @@
 
 <p> nome do projeto </p>
 
-<p> A Referência <p/>
+<p> Arrival info <p/>
 
 <p> Contem arquivos html, css, javascript e php <p/>
 
