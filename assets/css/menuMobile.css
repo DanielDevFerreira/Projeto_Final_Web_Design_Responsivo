@@ -1,0 +1,1058 @@
+nav {
+    z-index: 1000;
+    visibility: visible;
+    position:fixed;
+    bottom:0; 
+    min-height: 60px;
+    width:100%;
+    padding-top: 15px;
+    background-color: #404652;
+    border-top: 4px solid #87CEEB;   
+}
+
+body {
+ width: 100%;
+ font-family: 'Roboto', sans-serif;
+ background-color: rgb(255,255,255); 
+}
+
+#item, #item2, #item3, #item4, #icon, #icon2, #icon3, #icon4{
+    display: block;
+}
+
+/* ***********************************************************
+ * #global-nav
+ * ************************************************************/
+
+.open #global-navecao {
+  z-index: 1000;
+  visibility: visible;
+}
+
+#global-navecao {
+
+  visibility: hidden;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  color: #fff;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  font-size: 1em;
+
+}
+
+#global-navecao ul {
+  vertical-align: middle;
+  list-style: none;
+  padding: 30px;
+  margin: 0 auto !important;
+}
+#global-navecao button {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 10px 0;
+  
+}
+
+#modal_menu{
+    display: none;
+}
+
+/* ***********************************************************
+* nav-list
+* *********************************************************** */
+
+#global-navecao ul li {
+  opacity: 0;
+  -webkit-transform: scaleX(0) translateX(-360px);
+  transform: scaleX(0) translateX(-260px);
+  -webkit-transition: none;
+  transition: none;
+}
+.open #global-navecao ul li {
+  font-family: sans-serif;
+  opacity: 1;
+  -webkit-transform: scaleX(1) translateX(0);
+  transform: scaleX(1) translateX(0);
+
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+
+  -webkit-transition-delay: .1s;
+  transition-delay: .1s;
+}
+.open #global-navecao ul li:nth-child(2) {
+  -webkit-transition-delay: .2s;
+  transition-delay: .2s;
+}
+.open #global-navecao ul li:nth-child(3) {
+  -webkit-transition-delay: .3s;
+  transition-delay: .3s;
+}
+.open #global-navecao ul li:nth-child(4) {
+  -webkit-transition-delay: .4s;
+  transition-delay: .4s;
+}
+.open #global-navecao ul li:nth-child(5) {
+  -webkit-transition-delay: .5s;
+  transition-delay: .5s;
+}
+.open #global-navecao ul li:nth-child(6) {
+  -webkit-transition-delay: .6s;
+  transition-delay: .6s;
+}
+.open #global-navecao ul li:nth-child(7) {
+  -webkit-transition-delay: .7s;
+  transition-delay: .7s;
+}
+.open #global-navecao ul li:nth-child(8) {
+  -webkit-transition-delay: .8s;
+  transition-delay: .8s;
+}
+
+/* ***********************************************************
+* #nav-bg
+* *********************************************************** */
+#navegar-bg {
+  border: 4px solid white;
+  content: "";
+  padding: 30px;
+  bottom: 10%;
+  width: 90px;
+  height: 90px;
+  left: calc((100% - 110px)/2);
+  display: block;
+  position: fixed;
+  background: #0552B1;
+  -webkit-border-radius: 30%;
+  border-radius: 100%;
+  -webkit-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+
+}
+.open #navegar-bg {
+  -webkit-transform: scale(30);
+  transform: scale(30);
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
+/* ***********************************************************
+* #nav-toggle
+* *********************************************************** */
+
+#navecao-toggle {
+  display: block;
+  position: fixed;
+  left: calc((100% - 70px)/2);
+  bottom: 16%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  padding: 5px;
+  z-index: 1001;
+}
+
+#navecao-toggle div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+#navecao-toggle span {
+/*   display: block; */
+  padding: 2px;
+  border-radius: 20%;
+  height: 7px;
+  width: 100%;
+  background: #fff;
+/*   left: 0; */
+  zoom: 1;
+  -webkit-transition: .35s ease-in-out;
+  transition: .35s ease-in-out;
+  margin: 3px 0;
+}
+
+#navecao-toggle span:nth-child(1) {
+  top: 0;
+}
+#navecao-toggle span:nth-child(2) {
+  top: 8px;
+}
+#navecao-toggle span:nth-child(3) {
+  top: 16px;
+}
+
+.open #navecao-toggle {
+  background: transparent;
+}
+
+.open #navecao-toggle span {
+  background: #fff;
+}
+
+.open #navecao-toggle span:nth-child(1) {
+  top: 30px;
+  -webkit-transform: translateY(-10px) rotate(-135deg);
+  transform: translateY(10px) rotate(-135deg);
+  zoom: 1;
+}
+.open #navecao-toggle span:nth-child(2) {
+  width: 0;
+  display: none;
+  left: 50%;
+}
+.open #navecao-toggle span:nth-child(3) {
+  top: 9px;
+  margin-bottom: 20px;
+  -webkit-transform: translateY(-7px) rotate(135deg);
+  transform: translateY(-7px) rotate(135deg);
+  zoom: 1;
+}
+
+
+#button3, #button6, #button7, #button8 {
+    font-size: 1.5rem;
+    background:#404652;
+    color: white;
+}
+ #emerj_menu{
+     top: 2px;
+     font-size: 0.9em;
+     color: white;
+    }
+
+
+/*************************************************************
+*            Responsive do Desktop nessa largura             *
+*************************************************************/
+@media only screen and (min-width: 100px) and (max-width: 890px) and (min-height: 100px) and (max-height:1600px){
+    
+    #modal_menu{
+        display: block;
+    }
+    
+      nav {
+        height: 11%;
+    }
+    
+    #item, #item2, #item3, #item4 {
+        color: white;
+        font-size: 1em;
+    }
+    
+     #icon, #icon2, #icon3, #icon4{
+        width: 30px;
+    }
+    
+#navegar-bg {
+      bottom: 7.5%;    
+      width: 75px;
+      height: 75px;
+     left: calc((100% - 70px)/2);
+       
+}
+ 
+    #navecao-toggle {
+     left: calc((100% - 35px)/2);
+     bottom: 9%;
+     width: 40px;
+     height: 50px;
+        
+    }
+    
+    #emerj_menu{
+     top: -3px;
+     font-size: 0.9em;
+     color: white;
+    }
+    
+    #navecao-toggle span {
+     height: 3px;   
+    }
+    
+        #seta{
+        width: 20px;
+    }
+    
+  #global-navecao {
+    padding: 2px;
+    font-size: 1em;
+}
+        #button1{
+        top: -40px;
+    }
+    
+    #button2{
+        
+        top: -50px;
+    }
+    #button3{
+        
+        top: -50px;
+    }
+    
+    #button4{
+        top: -50px;
+    }
+    
+    #button5{
+        top: -50px;
+    }
+    #button6{
+        top: -50px;
+    }
+    #button7{
+       top: -50px;
+    }
+    #button8{
+        top: -50px;
+    }
+    
+.open #navecao-toggle span:nth-child(1) {
+  top: 8px;
+  -webkit-transform: translateY(-5px) rotate(-135deg);
+  transform: translateY(4px) rotate(-135deg);
+  zoom: 1;
+}
+.open #navecao-toggle span:nth-child(2) {
+  width: 0;
+  display: none;
+  left: 50%;
+}
+ 
+}
+    
+/*************************************************************
+*            Media View Port SmartPhone Small Retrato        *
+*************************************************************/
+
+@media only screen and (min-width: 280px) and (max-width: 374px) and (max-height: 740px){
+ 
+    nav {
+        height: 12%;
+    }
+    
+    #icon, #icon2, #icon3, #icon4{
+        width: 25px;
+    }
+    
+    #item{
+        margin-left: -5px;
+    }
+    
+    #icon2{
+        margin-left: -10px;
+    }
+    
+    #item2{
+        margin-left: -21px;
+    }
+    
+    #icon3{
+        margin-left: 35px;
+    }
+    
+    #item3{
+        margin-left: 27px;
+    }
+    
+    #icon4{
+        margin-left: 20px;
+    }
+    
+    #item4{
+        margin-left: 7px;
+    }
+    
+    #item, #item2, #item3, #item4 {
+        color: white;
+        font-size: 1em;
+    }
+  
+#navegar-bg {
+      bottom: 6%;    
+      width: 75px;
+      height: 75px;
+     left: calc((100% - 70px)/2);
+       
+}
+ 
+    #navecao-toggle {
+     left: calc((100% - 35px)/2);
+     bottom: 7.5%;
+     width: 40px;
+     height: 50px;
+        
+    }
+    
+    #emerj_menu{
+     top: -3px;
+     font-size: 0.9em;
+     color: white;
+    }
+    
+    #navecao-toggle span {
+     height: 3px;   
+    }
+    
+        #seta{
+        width: 20px;
+    }
+    
+  #global-navecao {
+    padding: 2px;
+    font-size: 1em;
+}
+        #button1{
+        top: -45px;
+    }
+    
+    #button2{
+        
+        top: -50px;
+    }
+    #button3{
+        
+        top: -50px;
+    }
+    
+    #button4{
+        top: -50px;
+    }
+    
+    #button5{
+        top: -50px;
+    }
+    #button6{
+        top: -50px;
+    }
+    #button7{
+       top: -50px;
+    }
+    #button8{
+        top: -50px;
+    }
+    
+.open #navecao-toggle span:nth-child(1) {
+  top: 8px;
+  -webkit-transform: translateY(-5px) rotate(-135deg);
+  transform: translateY(3px) rotate(-135deg);
+  zoom: 1;
+}
+.open #navecao-toggle span:nth-child(2) {
+  width: 0;
+  display: none;
+  left: 50%;
+}
+ 
+}
+
+
+
+
+/*************************************************************
+*             Media View  Port SmartPhone medium Retrato     *
+*************************************************************/
+
+@media only screen and (min-width: 375px) and (max-width: 413px) {
+ 
+     nav {
+        height: 11%;
+    }
+    
+     #icon, #icon2, #icon3, #icon4{
+        width: 30px;
+    }
+    
+    #icon2{
+        margin-left: -10px;
+    }
+    
+    #item2{
+        margin-left: -19px;
+    }
+    
+    #icon3{
+        margin-left: 45px;
+    }
+    
+    #item3{
+        margin-left: 40px;
+    }
+    
+    #icon4{
+        margin-left: 30px;
+    }
+    
+    #item4{
+        margin-left: 20px;
+    }
+    
+    #item, #item2, #item3, #item4 {
+        color: white;
+        font-size: 1em;
+    }
+    
+    #global-navecao a {
+ font-size: 1.2em;
+}
+    
+#navegar-bg {
+      bottom: 6%;    
+      width: 75px;
+      height: 75px;
+     left: calc((100% - 70px)/2);
+       
+}
+ 
+    #navecao-toggle {
+     left: calc((100% - 33px)/2);
+     bottom: 7.4%;
+     width: 40px;
+     height: 50px;
+        
+    }
+    
+    #emerj_menu{
+     top: -3px;
+     font-size: 0.9em;
+     color: white;
+    }
+    
+    #navecao-toggle span {
+     height: 3px;   
+    }
+    
+        #seta{
+        width: 20px;
+    }
+    
+  #global-navecao {
+    padding: 2px;
+    font-size: 1em;
+}
+        #button1{
+        top: -45px;
+    }
+    
+    #button2{
+        
+        top: -50px;
+    }
+    #button3{
+        
+        top: -50px;
+    }
+    
+    #button4{
+        top: -50px;
+    }
+    
+    #button5{
+        top: -50px;
+    }
+    #button6{
+        top: -50px;
+    }
+    #button7{
+       top: -50px;
+    }
+    #button8{
+        top: -50px;
+    }
+    
+.open #navecao-toggle span:nth-child(1) {
+  top: 8px;
+  -webkit-transform: translateY(-5px) rotate(-135deg);
+  transform: translateY(3px) rotate(-135deg);
+  zoom: 1;
+}
+.open #navecao-toggle span:nth-child(2) {
+  width: 0;
+  display: none;
+  left: 50%;
+}
+ 
+}
+
+
+
+/*************************************************************
+*              View Port SmartPhone Large Retrato                  *
+*************************************************************/
+
+@media only screen and (min-width: 414px) and (max-width: 699px) {
+    
+    nav {
+        height: 11%;
+    }
+    
+      #icon, #icon2, #icon3, #icon4{
+        width: 30px;
+    }
+    
+    #icon2{
+        margin-left: -10px;
+    }
+    
+    #item2{
+        margin-left: -19px;
+    }
+    
+    #icon3{
+        margin-left: 55px;
+    }
+    
+    #item3{
+        margin-left: 50px;
+    }
+    
+    #icon4{
+        margin-left: 40px;
+    }
+    
+    #item4{
+        margin-left: 30px;
+    }
+    
+    #item, #item2, #item3, #item4 {
+        color: white;
+        font-size: 1em;
+    }
+    
+    #global-navecao a {
+        font-size: 1.3em;
+    }
+    
+#navegar-bg {
+      bottom: 6%;    
+      width: 75px;
+      height: 75px;
+     left: calc((100% - 70px)/2);
+       
+}
+ 
+    #navecao-toggle {
+     left: calc((100% - 35px)/2);
+     bottom: 7.5%;
+     width: 40px;
+     height: 50px;
+        
+    }
+    
+    #emerj_menu{
+     top: -3px;
+     font-size: 0.9em;
+     color: white;
+    }
+    
+    #navecao-toggle span {
+     height: 3px;   
+    }
+
+    #button3{
+        
+        top: -55px;
+    }
+
+    #button6{
+        top: -55px;
+    }
+
+    #button8{
+        top: -55px;
+    }
+    
+    .open #navecao-toggle span:nth-child(1) {
+  top: 8px;
+  -webkit-transform: translateY(-5px) rotate(-135deg);
+  transform: translateY(3px) rotate(-135deg);
+  zoom: 1;
+}
+.open #navecao-toggle span:nth-child(2) {
+  width: 0;
+  display: none;
+  left: 50%;
+}
+}
+
+
+/*************************************************************
+*                     View Port Tablet Retrato               *
+*************************************************************/
+
+@media only screen and (min-width: 700px) and (max-width: 890px) {
+    
+    nav{
+        height: 15%;
+        padding-top: 10px !important;
+    }
+    
+     #icon, #icon2, #icon3, #icon4{
+        width: 30px;
+    }
+    
+    #icon2{
+        margin-left: -10px;
+    }
+    
+    #item2{
+        margin-left: -21px;
+    }
+    
+    #icon3{
+        margin-left: 120px;
+    }
+    
+    #item3{
+        margin-left: 113px;
+    }
+    
+    #icon4{
+        margin-left: 115px;
+    }
+    
+    #item4{
+        margin-left: 100px;
+    }
+    
+    #item, #item2, #item3, #item4 {
+        color: white;
+        font-size: 1em;
+    }
+
+    
+ 
+    #global-navecao a {
+    font-size: 1.5em;
+}
+#navegar-bg {
+      bottom: 6%;    
+      width: 75px;
+      height: 75px;
+     left: calc((100% - 70px)/2);
+       
+}
+ 
+    #navecao-toggle {
+     left: calc((100% - 35px)/2);
+     bottom: 8%;
+     width: 40px;
+     height: 50px;
+        
+    }
+    
+    #emerj_menu{
+    top: -3px;
+     font-size: 0.9em;
+     color: white;
+    }
+    
+    #navecao-toggle span {
+     height: 3px;   
+    }
+    
+    .open #navecao-toggle span:nth-child(1) {
+  top: 8px;
+  -webkit-transform: translateY(-5px) rotate(-135deg);
+  transform: translateY(3px) rotate(-135deg);
+  zoom: 1;
+}
+.open #navecao-toggle span:nth-child(2) {
+  width: 0;
+  display: none;
+  left: 50%;
+}
+}
+
+/*************************************************************
+*    View Port SmartPhone Smal and Medium Paisagem           *
+*************************************************************/
+
+@media (max-width: 740px) and (min-height: 300px) and (max-height:375px) and (orientation: landscape){
+    
+    nav{
+        height: 11%;
+        padding-top: 10px !important;
+    }
+    
+     
+    #icon, #icon2, #icon3, #icon4{
+        width: 25px;
+    }
+    
+    #icon{
+        margin-left: 5px;
+    }
+    
+    
+    #icon3{
+        margin-left: 70px;
+    }
+    
+    #item3{
+        margin-left: 62px;
+    }
+    
+    #icon4{
+        margin-left: 70px;
+    }
+    
+    #item4{
+        margin-left: 50px;
+    }
+
+   #item, #item2, #item3, #item4 {
+        color: white;
+        font-size: 1em;
+    }
+    
+    #item2{
+        margin-left: -21px;
+    }
+    
+#navegar-bg {
+      bottom: 6%;    
+      width: 75px;
+      height: 75px;
+     left: calc((100% - 70px)/2);
+       
+}
+ 
+    #navecao-toggle {
+     left: calc((100% - 35px)/2);
+     bottom: 8.5%;
+     width: 40px;
+     height: 50px;
+        
+    }
+    
+    #emerj_menu{
+     top: -3px;
+     font-size: 0.9em;
+     color: white;
+    }
+    
+    #global-navecao a {
+    font-size: 0.8em;
+}
+    
+    #seta{
+        width: 25px;
+    }
+    
+.open #navecao-toggle span:nth-child(1) {
+ 
+  margin-top: 30px;
+  -webkit-transform: translateY(-5px) rotate(-135deg);
+  transform: translateY(5px) rotate(-135deg);
+  zoom: 1;
+}
+.open #navecao-toggle span:nth-child(2) {
+  width: 0;
+  display: none;
+  left: 50%;
+}
+.open #navecao-toggle span:nth-child(3) {
+  top: 9px;
+  margin-bottom: 5px;
+  -webkit-transform: translateY(-5px) rotate(135deg);
+  transform: translateY(-5px) rotate(135deg);
+  zoom: 1;
+}
+    
+}
+
+
+/*************************************************************
+*              View Port SmartPhone Large Paisagem           *
+*************************************************************/
+
+@media (min-width: 732px) and (min-height: 375px) and (max-height: 480px) and (orientation: landscape){
+    nav{
+        height: 16%;
+    }
+    
+     
+    #icon, #icon2, #icon3, #icon4{
+        width: 25px;
+    }
+    
+    #item{
+        margin-left: -3px;
+    }
+    
+    #item2{
+        margin-left: -21px;
+    }
+    
+    #icon3{
+        margin-left: 130px;
+    }
+    
+    #icon4{
+        margin-left: 120px;
+    }
+
+   #item, #item2, #item3, #item4 {
+        color: white;
+        font-size: 1em;
+    }
+    
+#navegar-bg {
+      bottom: 6%;    
+      width: 75px;
+      height: 75px;
+     left: calc((100% - 70px)/2);
+       
+}
+ 
+    #navecao-toggle {
+     left: calc((100% - 35px)/2);
+     bottom: 8.5%;
+     width: 40px;
+     height: 50px;
+        
+    }
+    
+    #emerj_menu{
+     top: -3px;
+     font-size: 0.9em;
+     color: white;
+    }
+    
+    #global-navecao a {
+    font-size: 1em;
+}
+    
+    #seta{
+        width: 25px;
+    }
+    
+.open #navecao-toggle span:nth-child(1) {
+ 
+  margin-top: 30px;
+  -webkit-transform: translateY(-5px) rotate(-135deg);
+  transform: translateY(5px) rotate(-135deg);
+  zoom: 1;
+}
+.open #navecao-toggle span:nth-child(2) {
+  width: 0;
+  display: none;
+  left: 50%;
+}
+.open #navecao-toggle span:nth-child(3) {
+  top: 9px;
+  margin-bottom: 5px;
+  -webkit-transform: translateY(-5px) rotate(135deg);
+  transform: translateY(-5px) rotate(135deg);
+  zoom: 1;
+}
+    
+}
+
+/*************************************************************
+*              View Port Tablet Paisagem                     *
+*************************************************************/
+
+@media (min-width: 768px) and (min-height: 600px) and (orientation: landscape){
+    nav{
+        height: 11%;
+    }
+    
+     
+     #icon{
+        width: 35px;
+    }
+    
+
+    #icon2{
+        width: 35px;
+}
+    
+    #item{
+        margin-left: 1px;
+    }
+    
+     #icon3{
+        margin-left: 150px;
+    }
+    
+    #item3{
+        margin-left: 148px;
+    }
+    
+    #icon4{
+        margin-left: 150px;
+    }
+    
+    #item4{
+        margin-left: 145px;
+    }
+
+    #item, #item2, #item3, #item4 {
+        color: white;
+        font-size: 1.1em;
+    }
+    
+#navegar-bg {
+      bottom: 6%;    
+      width: 75px;
+      height: 75px;
+     left: calc((100% - 70px)/2);
+       
+}
+ 
+    #navecao-toggle {
+     left: calc((100% - 35px)/2);
+     bottom: 8%;
+     width: 40px;
+     height: 50px;
+        
+    }
+    
+    #emerj_menu{
+     top: -3px;
+     font-size: 0.9em;
+     color: white;
+    }
+    
+    #global-navecao a {
+    font-size: 1.5em;
+}
+    
+     #seta{
+        width: 32px;
+    }
+    
+.open #navecao-toggle span:nth-child(1) {
+ 
+  margin-top: 30px;
+  -webkit-transform: translateY(-5px) rotate(-135deg);
+  transform: translateY(5px) rotate(-135deg);
+  zoom: 1;
+}
+.open #navecao-toggle span:nth-child(2) {
+  width: 0;
+  display: none;
+  left: 50%;
+}
+.open #navecao-toggle span:nth-child(3) {
+  top: 9px;
+  margin-bottom: 5px;
+  -webkit-transform: translateY(-5px) rotate(135deg);
+  transform: translateY(-5px) rotate(135deg);
+  zoom: 1;
+}
+    
+}

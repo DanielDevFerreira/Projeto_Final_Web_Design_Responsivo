@@ -1,0 +1,14 @@
+
+
+@media only screen and (min-width: 687px) {
+#mobile{
+    display: none !important;
+}
+   
+    
+    #inicio_mobile, #navecao-toggle, #global-navecao{
+        display: none;
+    }
+    
+}
+

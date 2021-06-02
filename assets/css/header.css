@@ -1,0 +1,123 @@
+.header{
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    padding: 10px 30px;
+    background-color: lightblue;
+    color: white !important;
+    font-family: 'Roboto', sans-serif;
+    position: fixed;
+    transition: top 0.5s ease-in-out;
+    top: 40px;
+    width: 100%;
+    z-index: 1;
+
+}
+
+.headerSocial{
+    transition: top 0.5s ease-in-out;
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    background-color: black;
+    top: 0;
+}
+
+.headerSocial > a, .headerSocial > p {
+    padding: 5px;
+    margin: 0 15px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+}
+
+.nav-up {
+    top: -100px;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    padding: 5px 25px;
+    margin-left: 30px;
+    width: 150px;
+}
+
+.logo > img {
+    width: 175px !important;
+}
+
+@media (min-width: 668px) and (max-width: 768px){
+    .logo > img {
+        width: 130px !important;
+    }
+    .menuDesktop > div > a{
+        margin: 0 10px !important;
+        padding: 5px 10px !important;
+    } 
+}
+
+/*  Telas de smartphones */
+@media (min-width: 320px) and (max-width: 667px){
+    .menuDesktop{
+        display: none !important;
+    }
+
+    .header{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo{
+        margin-left: 0;
+    }
+    .logo > img{
+        width: 140px !important;
+    }
+}
+
+@media only screen and (min-width: 668px) and (max-width: 823px){
+    .menuDesktop > div > a{
+        padding: 5px 5px !important;
+    }
+    .logo > img{
+        width: 130px !important;
+    }
+    .logo{
+        margin-left: 0;
+    }
+}
+
+.menuDesktop{
+    margin-right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.menuDesktop > div {
+    display: flex;
+    justify-content: space-around;
+    padding: 5px 15px;
+    list-style: none;
+}
+
+.menuDesktop > div > a{
+    margin: 0 50px;
+    padding: 5px 20px;
+    cursor: pointer;
+    transition: border-bottom 1s;
+    transition: font-size 0.5s;
+    text-decoration: none;
+    color: white;
+}
+
+.menuDesktop > div > a:hover{
+    border-bottom: 1px solid #ffffff;
+    font-size: 1.8rem;
+}

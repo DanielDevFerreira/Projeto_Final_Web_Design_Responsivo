@@ -1,0 +1,132 @@
+        ul #modal_menu{
+           
+        }    
+    
+        #sub, #sub2, #sub3{
+            display: none;
+            border: none;
+        }
+        
+        #sub li, #sub2 li, #sub3 li{
+            border: none;
+        }
+        
+        #sub a, #sub2 a, #sub3 a{
+            color:white;
+            font-size: 0.9em;
+            border: none;
+        }
+        
+        #produtos, #consulta, #biblioteca{
+           
+            border-bottom: 2px solid royalblue;
+            padding: 15px;
+        }
+        
+        #produtos ul, #consulta ul, #biblioteca ul{
+            list-style:none; 
+           
+        }
+        
+        #produtos li, #consulta li, #biblioteca li{
+            padding: 10px;
+        }
+        
+        #exampleModalCenter, #exampleModalCenter2, #exampleModalCenter3, #exampleModalCenter4, #exampleModalCenter5, #exampleModalCenter6{
+            font-size:0.5em;
+            margin-top:30px;
+            
+        }
+        
+        #exampleModalCenter ul, #exampleModalCenter2 ul, #exampleModalCenter3 ul, #exampleModalCenter4 ul, #exampleModalCenter5 ul, #exampleModalCenter6 ul{
+            text-align: left;
+            list-style: none;
+        }
+        
+        #exampleModalCenter li, #exampleModalCenter2 li, #exampleModalCenter3 li, #exampleModalCenter4 li, #exampleModalCenter5 li, #exampleModalCenter6 li{
+            border-bottom: 2px solid #a9a9a9;
+            padding: 8px;
+            font-size: 2em;
+            
+        }
+        
+        #exampleModalCenter li a, #exampleModalCenter2 li a, #exampleModalCenter3 li a, #exampleModalCenter4 li a, #exampleModalCenter5 li a, #exampleModalCenter6 li a{
+            color: white;
+        }
+        
+        #exampleModalCenter button, #exampleModalCenter3 button, #exampleModalCenter4 button, #exampleModalCenter5 button, #exampleModalCenter6 button{
+            border-radius:50%;
+            margin: -32px -32px 0px 0px;
+            font-size:15px;
+            width:35px;
+            float:right;
+        }
+        
+        #exampleModalCenter2 button{
+            border-radius:50%;
+            margin: -60px -35px 0px 0px;
+            font-size:15px;
+            width:30px;
+            float:right;
+        }
+        
+        .modal-body{
+            background-color: #87CEEB;
+            
+        }
+        
+        .addLeftMargin
+        {
+          margin-top: 20px;
+        }
+
+
+@media only screen and (min-width: 320px) and (max-width: 480px){
+    
+    #exampleModalCenter2 button{
+            border-radius:50%;
+            margin: -60px -35px 0px 0px;
+            font-size:15px;
+            width:35px;
+            float:right;
+        }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1024px){
+       #exampleModalCenter2 button{
+            border-radius:50%;
+            margin: -35px -35px 0px 0px;
+            font-size:15px;
+            width:35px;
+            float:right;
+        }
+}
+        
+        @media (max-width: 896px) and (orientation: landscape){
+            #exampleModalCenter button, #exampleModalCenter3 button, #exampleModalCenter4 button, #exampleModalCenter5 button, #exampleModalCenter6 button{
+            border-radius:50%;
+            margin: -28px -32px 0px 0px;
+            font-size:15px;
+            width:35px;
+            float:right;
+        }
+            
+            #exampleModalCenter2 button{
+            border-radius:50%;
+            margin: -35px -35px 0px 0px;
+            font-size:15px;
+            width:30px;
+            float:right;
+        }
+        
+        }
+        
+
+
+
+@media only screen and (min-width: 1025px) {
+    
+       #exampleModalCenter, #exampleModalCenter2, #exampleModalCenter3, #exampleModalCenter4, #exampleModalCenter5, #exampleModalCenter6{
+           display: none;
+    }
+}

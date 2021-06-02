@@ -1,0 +1,33 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    justify-content: center;
+    background-color: #404652;
+    color: white;
+}
+
+@media (min-width: 320px) and (max-width: 667px){
+    .footer{
+        height: 360px !important;
+        justify-content: start;
+    }
+    .footer > div {
+        padding: 10px;
+    }
+}
+
+.footer > div {
+    padding: 15px;
+}
+
+.footer > div:nth-child(2) > a {
+    margin: 0 30px;
+    cursor: pointer;
+}
+
+.footer > div > img {
+    width: 150px;
+
+}
